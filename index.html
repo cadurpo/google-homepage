@@ -3,35 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./normalize.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Google by @cadurpo</title>
 </head>
 <body>
-    <nav>
-        <ul class="navigation">
-            <li><a href="https://mail.google.com/mail/&ogbl">Gmail</a></li>
-            <li><a href="https://www.google.com.br/imghp?hl=pt-BR&ogbl">Images</a></li>
-            <li><a href="https://www.google.com.br/intl/pt-BR/about/products"><span class="material-icons">apps</span></a></li>                
-            <li><a href="account_circle"><span class="material-icons">account_circle</span></a></li>
-        </ul>
-    </nav>
-    <header>
-        <div class="container-logo">
-            <img class="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="">
+    <div class="page">
+        <div class="page-container">
+            <!-- Navegação -->
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="https://mail.google.com/mail/&ogbl">Gmail</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="https://www.google.com.br/imghp?hl=pt-BR&ogbl">Images</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="https://www.google.com.br/intl/pt-BR/about/products"><span class="material-icons">apps</span></a>
+                    </li>                
+                    <li class="nav__item nav__item--profile">
+                        <a href="https://github.com/cadurpo/" target="_blank"></a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Main -->
+            <main class="main">
+                <div class="main__logo">
+                    <img class="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="">
+                </div>
+                <div class="main__input">       
+                    <form class="pesquisa" action="">
+                        <div class="form-group">
+                            <div class="form-logo-search">
+                                <span class="material-icons lupa">search</span>
+                            </div>                    
+                            <input class="pesquisa-texto" type="text" name="">
+                            <span class="material-icons">keyboard</span>
+                            <span class="material-icons">mic</span>
+                        </div>
+                    </form>
+                </div> 
+                <div class="main__buttons">
+                    em branco
+                </div>
+            </main>    
+            <div>footer</div>
         </div>
-        <div>
-            <form action="/search">formulário pesquisa</form>
-        </div>
-        <div>
-            em branco
-        </div>
-    </header>    
-    <div>footer</div>
+    </div>
 </body>
 </html>
 
