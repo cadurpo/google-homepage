@@ -10,6 +10,7 @@ html {
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
 }
 
 ul {
@@ -37,10 +38,17 @@ a:hover {
   height: 100%;
 }
 
+.page__container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .nav__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
+  padding: 6px;
 }
 
 .nav__item--profile a {
@@ -55,6 +63,10 @@ a:hover {
 
 .main {
   text-align: center;
+  flex: 1;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
 }
 
 .main_logo {
@@ -94,4 +106,38 @@ a:hover {
   border: none;
 }
 
+.main__submit {
+  margin-top: 25px;
+}
 
+.main__submit--search,
+.main__submit--lucky {
+  padding: 0 16px;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  font-size: 14px;
+  margin: 11px 4px;
+  height: 35px;
+  cursor: pointer;
+  color: #3c4043;
+  border-style: none;
+  font-family: Arial, sans-serif;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #f2f2f2;
+  padding: 0 20px;
+}
+
+.footer__list {
+  display: flex;
+  color: #70757a;
+  align-items: center;
+}
+
+.footer__item {
+  padding-left: 20px;
+  font: 14px Arial, Sans-Serif;
+}
